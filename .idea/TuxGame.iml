@@ -5,6 +5,10 @@
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake_modules/FindSFML.cmake" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Behavior/GameObject.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Behavior/Component.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Behavior/GameObject.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Behavior/Component.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Core/Input.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Core/Engine.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TuxEngine/Core/Engine.h" isTestSource="false" />

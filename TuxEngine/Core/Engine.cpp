@@ -4,6 +4,7 @@
 
 #include "Engine.h"
 #include <iostream>
+#include <time.h>
 #include <string>
 #include <SFML/Graphics.hpp>
 
@@ -22,7 +23,7 @@ TuxEngine::Core::Engine::~Engine() {
 void TuxEngine::Core::Engine::Start()
 {
     sf::Event e_event;
-    sf::Clock elapsedTimer;
+    sf::Clock tickTimer;
     sf::Clock engineTimer;
 
     while (m_window.isOpen())
@@ -32,9 +33,10 @@ void TuxEngine::Core::Engine::Start()
             if (e_event.type == sf::Event::Closed)
                 m_window.close();
         }
-        sf::Time elapsed = elapsedTimer.restart();
-        Update(elapsed);
+
         Render();
+        sf::Time elapsed = tickTimer.restart();
+        Update(elapsed);
 
         if (engineTimer.getElapsedTime().asSeconds() >= 1)
         {
@@ -56,7 +58,7 @@ void TuxEngine::Core::Engine::Update(sf::Time elapsed)
 
 void TuxEngine::Core::Engine::Render()
 {
-    m_window.clear(clC);
+    m_window.clear();
 
     m_window.display();
 
