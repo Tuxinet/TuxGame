@@ -7,29 +7,24 @@
 
 #include <string>
 #include <vector>
-#include "Component.h"
+#include "IComponent.h"
+#include "IGameObject.h"
 
 using namespace std;
 
-namespace TuxEngine
-{
-    namespace Behavior
-    {
-        class GameObject {
-        public:
-            virtual void Draw();
-            string m_name;
+class GameObject: public IGameObject {
+public:
+    void Draw() override;
+    string m_name;
 
-        protected:
-            float m_x, m_y;
+protected:
+    float m_x, m_y;
+    void Update() override ;
 
-        private:
-            unsigned int m_identifier;
-            vector<Component> m_components;
+private:
+    unsigned int m_identifier;
 
-        };
-    }
-}
+};
 
 
 #endif //TUXGAME_GAMEOBJECT_H

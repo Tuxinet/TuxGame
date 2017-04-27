@@ -5,25 +5,21 @@
 #ifndef TUXGAME_COMPONENT_H
 #define TUXGAME_COMPONENT_H
 
-class GameObject;
+#include <memory>
+#include "IComponent.h"
+#include "IGameObject.h"
 
-namespace TuxEngine
-{
-    namespace Behavior
-    {
-        class Component {
-        public:
-            Component(const GameObject *go) : gameObject(go) {}
-            
-            const GameObject *gameObject;
+using namespace std;
 
-        protected:
-            virtual void OnEnable();
-            virtual void Start();
-            virtual void Update();
-        };
-    }
-}
+class Component: public IComponent {
+public:
+    Component(const shared_ptr<IGameObject> parent) : IComponent(parent) {}
+
+protected:
+    void OnEnable() override;
+    void Start()    override;
+    void Update()   override;
+};
 
 
 #endif //TUXGAME_COMPONENT_H

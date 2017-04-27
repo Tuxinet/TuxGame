@@ -1,0 +1,3 @@
+/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir

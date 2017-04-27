@@ -3,7 +3,7 @@ project(TuxGame)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp TuxEngine/Core/Engine.cpp TuxEngine/Core/Engine.h TuxEngine/Core/Input.cpp TuxEngine/Core/Input.h TuxEngine/Behavior/GameObject.cpp TuxEngine/Behavior/GameObject.h TuxEngine/Behavior/Component.cpp TuxEngine/Behavior/Component.h)
+set(SOURCE_FILES main.cpp TuxEngine/Core/Engine.cpp TuxEngine/Core/Engine.h TuxEngine/Core/Input.cpp TuxEngine/Core/Input.h TuxEngine/Behavior/GameObject.cpp TuxEngine/Behavior/GameObject.h TuxEngine/Behavior/Component.cpp TuxEngine/Behavior/Component.h TuxEngine/Behavior/IComponent.h TuxEngine/Behavior/IGameObject.h)
 add_executable(TuxGame ${SOURCE_FILES})
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})

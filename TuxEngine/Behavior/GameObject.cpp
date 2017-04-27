@@ -5,7 +5,12 @@
 #include "GameObject.h"
 
 
-void TuxEngine::Behavior::GameObject::Draw()
+void GameObject::Draw()
+{
+
+}
+
+void GameObject::Update()
 {
 
 }
