@@ -7,27 +7,21 @@
 
 using namespace std;
 
-TuxEngine::Core::Input::Input()
-{
 
-}
+// Definition of static variables since cpp is retarded...
+std::map<sf::Keyboard::Key, std::vector<std::function<void(void)>>> TuxEngine::Input::m_callbackMap;
 
-TuxEngine::Core::Input::~Input()
-{
-
-}
-
-void TuxEngine::Core::Input::addCallbackToKey(sf::Keyboard::Key key, void (*fp)())
+void TuxEngine::Input::addCallbackToKey(sf::Keyboard::Key key, std::function<void(void)> func)
 {
     if (!(m_callbackMap.find(key) == m_callbackMap.end()))
         return;
 
-    m_callbackMap[key].push_back(fp);
+    m_callbackMap[key].push_back(func);
 }
 
-void TuxEngine::Core::Input::Update()
+void TuxEngine::Input::Update()
 {
-    for (auto& kv : m_callbackMap)
+    for (auto& kv : Input::m_callbackMap)
     {
         if (sf::Keyboard::isKeyPressed(kv.first))
         {
@@ -36,7 +30,7 @@ void TuxEngine::Core::Input::Update()
     }
 }
 
-void TuxEngine::Core::Input::handleInput(sf::Keyboard::Key key, vector<void (*)()> functions)
+void TuxEngine::Input::handleInput(sf::Keyboard::Key key, vector<std::function<void(void)>> functions)
 {
     for (auto& fp : functions)
     {

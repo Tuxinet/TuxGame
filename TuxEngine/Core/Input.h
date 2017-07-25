@@ -7,28 +7,21 @@
 
 
 #include <map>
+#include <functional>
 #include <vector>
 #include <SFML/Window/Keyboard.hpp>
 
-using namespace std;
-
 namespace TuxEngine
 {
-    namespace Core
+    class Input
     {
-        class Input
-        {
-        private:
-            std::map<sf::Keyboard::Key, std::vector<void (*)()>> m_callbackMap;
-            void handleInput(sf::Keyboard::Key key, vector<void (*)()> functions);
-        public:
-            Input();
-            ~Input();
-
-            void addCallbackToKey(sf::Keyboard::Key key, void (*)());
-            void Update();
-        };
-    }
+    private:
+        static std::map<sf::Keyboard::Key, std::vector<std::function<void(void)>>> m_callbackMap;
+        static void handleInput(sf::Keyboard::Key key, std::vector<std::function<void(void)>> functions);
+    public:
+        static void addCallbackToKey(sf::Keyboard::Key key, std::function<void(void)> function);
+        static void Update();
+    };
 }
 
 

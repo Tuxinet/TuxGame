@@ -8,8 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include "Input.h"
-
-using namespace std;
+#include "../Behavior/Component.h"
 
 namespace TuxEngine
 {
@@ -17,8 +16,10 @@ namespace TuxEngine
     {
         class Engine {
         public:
-            Engine(int width, int height, string title);
+            Engine(int width, int height, std::string title);
             ~Engine();
+
+            void AddGameObject(std::shared_ptr<IGameObject> p_gameObject);
 
             void Start();
 
@@ -26,9 +27,7 @@ namespace TuxEngine
             sf::RenderWindow m_window;
             int m_tickCounter = 0;
             int m_renderCounter = 0;
-
-            // TuxEngine core components
-            TuxEngine::Core::Input m_input;
+            std::vector<std::shared_ptr<IGameObject>> m_gameObjects;
 
             void Update(sf::Time time);
             void Render();

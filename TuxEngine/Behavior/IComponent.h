@@ -9,15 +9,14 @@
 
 class IGameObject;
 
-using namespace std;
-
 class IComponent
 {
 public:
-    const shared_ptr<IGameObject> gameObject;
+    std::shared_ptr<IGameObject> m_gameObject;
+    virtual void SetParent(std::shared_ptr<IGameObject> parent) = 0;
 
 protected:
-    IComponent(const shared_ptr<IGameObject> parent): gameObject(parent) {}
+    IComponent() {}
 
     virtual void OnEnable() = 0;
     virtual void Start() = 0;

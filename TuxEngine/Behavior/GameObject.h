@@ -7,22 +7,18 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 #include "IComponent.h"
 #include "IGameObject.h"
-
-using namespace std;
+#include "../Graphics/Renderer.h"
 
 class GameObject: public IGameObject {
 public:
-    void Draw() override;
-    string m_name;
+    GameObject() { }
 
-protected:
-    float m_x, m_y;
+    void Render(sf::RenderWindow &window) override;
     void Update() override ;
-
-private:
-    unsigned int m_identifier;
+    void AddComponent(std::shared_ptr<IComponent> component) override;
 
 };
 

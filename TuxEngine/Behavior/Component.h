@@ -6,14 +6,14 @@
 #define TUXGAME_COMPONENT_H
 
 #include <memory>
+#include <iostream>
 #include "IComponent.h"
 #include "IGameObject.h"
 
-using namespace std;
-
 class Component: public IComponent {
 public:
-    Component(const shared_ptr<IGameObject> parent) : IComponent(parent) {}
+    Component() : IComponent() {}
+    void SetParent(std::shared_ptr<IGameObject> parent) override;
 
 protected:
     void OnEnable() override;
