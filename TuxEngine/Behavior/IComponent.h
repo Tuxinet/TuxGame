@@ -12,6 +12,7 @@ class IGameObject;
 class IComponent
 {
 public:
+    ~IComponent(){};
     std::shared_ptr<IGameObject> m_gameObject;
     virtual void SetParent(std::shared_ptr<IGameObject> parent) = 0;
 

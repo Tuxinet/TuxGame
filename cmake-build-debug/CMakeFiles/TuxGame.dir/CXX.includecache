@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,45 +6,77 @@
 
 #IncludeRegexTransform: 
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/Component.cpp
-Component.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/Component.h
+/home/tuxinet/CLionProjects/TuxGame/TestGame/Character.cpp
+Character.h
+/home/tuxinet/CLionProjects/TuxGame/TestGame/Character.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/Component.h
+/home/tuxinet/CLionProjects/TuxGame/TestGame/Character.h
+../TuxEngine/Behavior/GameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.h
+../TuxEngine/Core/Input.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.h
+iostream
+-
+
+/home/tuxinet/CLionProjects/TuxGame/TestGame/main.cpp
+iostream
+-
+../TuxEngine/Core/Engine.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Engine.h
+../TuxEngine/Behavior/GameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.h
+../TuxEngine/Graphics/SpriteRenderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.h
+Character.h
+/home/tuxinet/CLionProjects/TuxGame/TestGame/Character.h
+
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.cpp
+Component.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.h
+
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.h
 memory
 -
+iostream
+-
 IComponent.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IComponent.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IComponent.h
 IGameObject.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IGameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IGameObject.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/GameObject.cpp
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.cpp
 GameObject.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/GameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/GameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.h
 string
 -
 vector
 -
+iostream
+-
 IComponent.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IComponent.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IComponent.h
 IGameObject.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IGameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IGameObject.h
+../Graphics/Renderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IComponent.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IComponent.h
 memory
 -
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/IGameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/IGameObject.h
 memory
 -
 vector
 -
+SFML/Graphics.hpp
+-
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Engine.cpp
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Engine.cpp
 Engine.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Engine.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Engine.h
 iostream
 -
 time.h
@@ -53,34 +85,56 @@ string
 -
 SFML/Graphics.hpp
 -
+../Graphics/SpriteRenderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Engine.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Engine.h
 SFML/Graphics.hpp
 -
 string
 -
 Input.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Input.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.h
+../Behavior/Component.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.h
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Input.cpp
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.cpp
 Input.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Input.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.h
 iostream
 -
 
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Input.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.h
 map
+-
+functional
 -
 vector
 -
 SFML/Window/Keyboard.hpp
 -
 
-/home/tuxinet/Workspace/CLion/TuxGame/main.cpp
-iostream
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.cpp
+Renderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.h
+
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.h
+SFML/Graphics.hpp
 -
-thread
+../Behavior/Component.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.h
+../Behavior/GameObject.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.h
+
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.cpp
+SpriteRenderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.h
+
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.h
+Renderer.h
+/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.h
+SFML/Graphics/Sprite.hpp
 -
-TuxEngine/Core/Engine.h
-/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Engine.h
+SFML/Graphics/Texture.hpp
+-
 

@@ -35,9 +35,9 @@ void TuxEngine::Core::Engine::Start()
                 m_window.close();
         }
 
-        Render();
         sf::Time elapsed = tickTimer.restart();
         Update(elapsed);
+        Render();
 
         if (engineTimer.getElapsedTime().asSeconds() >= 1)
         {
@@ -58,11 +58,9 @@ void TuxEngine::Core::Engine::AddGameObject(std::shared_ptr<IGameObject> p_gameO
 
 void TuxEngine::Core::Engine::Update(sf::Time elapsed)
 {
-    Input::Update();
-
     for(auto go: m_gameObjects)
     {
-        go->Update();
+        go->Update(elapsed.asSeconds());
     }
 
     m_tickCounter++;

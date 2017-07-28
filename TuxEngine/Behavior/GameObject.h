@@ -17,8 +17,8 @@ public:
     GameObject() { }
 
     void Render(sf::RenderWindow &window) override;
-    void Update() override ;
-    void AddComponent(std::shared_ptr<IComponent> component) override;
+    void Update(float deltaTime) override ;
+    void AddComponent(std::weak_ptr<IComponent> component) override;
 
 };
 

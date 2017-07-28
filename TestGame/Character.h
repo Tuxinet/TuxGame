@@ -7,16 +7,14 @@
 
 #include "../TuxEngine/Behavior/GameObject.h"
 #include "../TuxEngine/Core/Input.h"
+#include <iostream>
 
 class Character: public GameObject {
+private:
+    float speed = 200;
 public:
     Character();
-
-public:
-    void moveUp();
-    void moveDown();
-    void moveLeft();
-    void moveRight();
+    void Update(float deltaTime) override ;
 };
 
 

@@ -9,21 +9,27 @@ void GameObject::Render(sf::RenderWindow &window)
     std::shared_ptr<Renderer> renderer;
     for (auto component: m_components)
     {
-        renderer = std::dynamic_pointer_cast<Renderer>(component);
-
-        if (renderer != NULL)
+        if (auto ptr = component.lock())
         {
-            renderer->Render(window);
+            renderer = std::dynamic_pointer_cast<Renderer>(ptr);
+
+            if (renderer != NULL)
+            {
+                renderer->Render(window);
+            }
         }
     }
 }
 
-void GameObject::AddComponent(std::shared_ptr<IComponent> component) {
-    component->m_gameObject = std::shared_ptr<IGameObject>(this);
-    m_components.push_back(component);
+void GameObject::AddComponent(std::weak_ptr<IComponent> component) {
+    if (auto tmp = component.lock())
+    {
+        tmp->m_gameObject = std::shared_ptr<IGameObject>(this);
+        m_components.push_back(component);
+    }
 }
 
-void GameObject::Update()
+void GameObject::Update(float deltaTime)
 {
 
 }

@@ -4,11 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/Component.cpp" "/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Behavior/Component.cpp.o"
-  "/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Behavior/GameObject.cpp" "/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Behavior/GameObject.cpp.o"
-  "/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Engine.cpp" "/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Core/Engine.cpp.o"
-  "/home/tuxinet/Workspace/CLion/TuxGame/TuxEngine/Core/Input.cpp" "/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Core/Input.cpp.o"
-  "/home/tuxinet/Workspace/CLion/TuxGame/main.cpp" "/home/tuxinet/Workspace/CLion/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/main.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TestGame/Character.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TestGame/Character.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TestGame/main.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TestGame/main.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/Component.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Behavior/Component.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Behavior/GameObject.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Behavior/GameObject.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Engine.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Core/Engine.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Core/Input.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Core/Input.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/Renderer.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Graphics/Renderer.cpp.o"
+  "/home/tuxinet/CLionProjects/TuxGame/TuxEngine/Graphics/SpriteRenderer.cpp" "/home/tuxinet/CLionProjects/TuxGame/cmake-build-debug/CMakeFiles/TuxGame.dir/TuxEngine/Graphics/SpriteRenderer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
